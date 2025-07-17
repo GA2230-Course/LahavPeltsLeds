@@ -18,7 +18,6 @@ public class BlinkAnimation extends AnimationBase {
     public void init() {
         this.stopWatch.start();
         this.strip.setAll(color);
-        strip.apply();
         startTime = (int)stopWatch.get();
     }
 
