@@ -23,6 +23,8 @@ public class Main {
         SolidAnimation SA = new SolidAnimation(new Color(123));
         SA.setStrip(ledSim);
         
+        SA.init();
+        
         while (true) {
             SA.periodic();
         }

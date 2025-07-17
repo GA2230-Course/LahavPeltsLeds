@@ -8,7 +8,7 @@ public abstract class AnimationBase {
     public void setStrip(LedStrip strip){
         this.strip = strip;
     } 
-    //adad
+
     public abstract void init();
     public abstract void periodic();
 }
