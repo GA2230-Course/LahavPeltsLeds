@@ -9,15 +9,27 @@ public class BlinkAnimation extends AnimationBase {
     private int startTime;
     protected StopWatch stopWatch = new StopWatch();
 
-    public BlinkAnimation(Color color, int interval) {
+    protected double animationDuration = 10.0;
+
+    public BlinkAnimation(Color color, int interval, double animationDuration) {
         this.color = color;
         this.interval = interval;
+        this.animationDuration = animationDuration;
+    }
+
+    @Override
+    public boolean isOver() {
+        if (this.stopWatch.get() > animationDuration) { 
+            return true;
+        }
+        return false;
     }
 
     @Override
     public void init() {
         this.stopWatch.start();
         this.strip.setAll(color);
+        strip.apply();
         startTime = (int)stopWatch.get();
     }
 
