@@ -17,14 +17,14 @@ public class Main {
         LedController LC = new LedController(ledSim);
 
 
-        BlinkAnimation blinkAnimation = new BlinkAnimation(new Color(100, 0, 40), 5);
-        MostBeautifulAnimation coolAnimation = new MostBeautifulAnimation(new Color(0, 100, 40), 5);
+        BlinkAnimation blinkAnimation = new BlinkAnimation(new Color(100, 0, 40), 1);
+        MostBeautifulAnimation coolAnimation = new MostBeautifulAnimation(new Color(0, 100, 40), 1);
 
 
-        AnimationTimed blink = new AnimationTimed(blinkAnimation, 10);
-        AnimationTimed cool = new AnimationTimed(coolAnimation, 10);
+        AnimationTimed blink = new AnimationTimed(blinkAnimation, 2);
+        AnimationTimed cool = new AnimationTimed(coolAnimation, 6);
 
-        RandomAnimationGroup randomAnimationGroup = new RandomAnimationGroup(blink, cool, blink, cool);
+        RandomAnimationGroup randomAnimationGroup = new RandomAnimationGroup(blink, cool);
 
         LC.setAnimation(randomAnimationGroup);
 
@@ -32,4 +32,3 @@ public class Main {
             LC.periodic();
     }
 }
-
