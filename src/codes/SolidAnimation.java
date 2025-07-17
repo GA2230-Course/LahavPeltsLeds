@@ -10,13 +10,12 @@ public class SolidAnimation extends AnimationBase {
         this.color = color;
     }
 
+    @Override
     public void init() {
         this.strip.setAll(color);
-        //this.strip.apply();
-
     }
 
+    @Override
     public void periodic() {
-        //this.strip.apply();
     }
 }

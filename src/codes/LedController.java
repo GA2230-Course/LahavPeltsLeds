@@ -14,6 +14,7 @@ public class LedController {
         strip.apply();     
     }
 
+
     public void setAnimation(AnimationBase animation){
         this.currentAnimation = animation;
         currentAnimation.setStrip(strip);
