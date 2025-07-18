@@ -3,7 +3,7 @@ package src.codes;
 import java.awt.Color;
 import Utils.StopWatch;
 
-public class MostBeautifulAnimation extends AnimationBase {
+public class CoolAnimation extends AnimationBase {
     protected int ledCount;
     protected int position = 0; // מיקום ההזזה
     protected StopWatch stopWatch = new StopWatch();
@@ -11,7 +11,7 @@ public class MostBeautifulAnimation extends AnimationBase {
     protected Color baseColor;
     protected int interval;
 
-    public MostBeautifulAnimation(Color color, int interval) {
+    public CoolAnimation(Color color, int interval) {
         this.baseColor = color;
         this.interval = interval;
     }
