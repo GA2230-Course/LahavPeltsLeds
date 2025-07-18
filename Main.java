@@ -3,7 +3,7 @@ import java.awt.Color;
 
 import src.codes.AnimationTimed;
 import src.codes.BlinkAnimation;
-import src.codes.MostBeautifulAnimation;
+import src.codes.CoolAnimation;
 import src.codes.LedController;
 import src.codes.RandomAnimationGroup;
 import src.codes.SequentialAnimationGroup;
@@ -18,7 +18,7 @@ public class Main {
 
 
         BlinkAnimation blinkAnimation = new BlinkAnimation(new Color(100, 0, 40), 1);
-        MostBeautifulAnimation coolAnimation = new MostBeautifulAnimation(new Color(0, 100, 40), 1);
+        CoolAnimation coolAnimation = new CoolAnimation(new Color(0, 100, 40), 1);
 
 
         AnimationTimed blink = new AnimationTimed(blinkAnimation, 2);
